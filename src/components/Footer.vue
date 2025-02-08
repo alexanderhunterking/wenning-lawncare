@@ -1,15 +1,27 @@
 <template>
-    <footer class="footer bg-light text-center text-lg-start">
+    <footer :class="['footer', theme, 'text-center', 'text-lg-start']">
       <div class="text-center p-3">
         © 2025 Lawncare & Landscaping:
-        <a class="text-dark" href="https://example.com/">example.com</a>
+        <a :class="theme === 'dark-mode' ? 'text-light' : 'text-dark'" href="https://example.com/">example.com</a>
+        <button @click="toggleTheme" class="btn btn-secondary ms-3">Toggle Theme</button>
       </div>
     </footer>
   </template>
   
   <script>
   export default {
-    name: 'Footer'
+    name: 'Footer',
+    props: {
+      theme: {
+        type: String,
+        default: 'light-mode'
+      }
+    },
+    methods: {
+      toggleTheme() {
+        this.$emit('toggle-theme');
+      }
+    }
   }
   </script>
   

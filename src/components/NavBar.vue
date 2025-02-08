@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav :class="['navbar', 'navbar-expand-lg', theme === 'dark-mode' ? 'navbar-dark bg-dark-green' : 'navbar-light bg-light-green']">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Wenning Lawncare & Landscaping</a>
+        <a class="navbar-brand" href="#">Lawncare & Landscaping</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,9 +30,22 @@
   
   <script>
   export default {
-    name: 'NavBar'
+    name: 'NavBar',
+    props: {
+      theme: {
+        type: String,
+        default: 'light-mode'
+      }
+    }
   }
   </script>
   
   <style scoped>
+  .bg-light-green {
+    background-color: #d4edda;
+  }
+  
+  .bg-dark-green {
+    background-color: #155724;
+  }
   </style>
