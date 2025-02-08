@@ -2,7 +2,7 @@
   <div :class="theme">
     <NavBar :theme="theme" />
     <div class="container mt-5">
-      <h1>Welcome to Lawncare & Landscaping</h1>
+      <h1>Welcome to Wenning Lawncare & Landscaping</h1>
       <p>Your trusted partner for all your lawncare and landscaping needs.</p>
     </div>
     <Footer @toggle-theme="toggleTheme" :theme="theme" />
