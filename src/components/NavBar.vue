@@ -1,5 +1,5 @@
 <template>
-    <nav :class="['navbar', 'navbar-expand-lg', theme === 'dark-mode' ? 'navbar-dark bg-dark-green' : 'navbar-light bg-light-green']">
+    <nav :class="['navbar', 'navbar-expand-lg', theme === 'dark-mode' ? 'navbar-dark bg-dark-green' : 'navbar-light bg-light-green', 'theme-transition']">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img :src="logoSrc" alt="Wenning Lawncare & Landscaping" class="navbar-logo"></a>
         <button class="navbar-toggler" type="button" @click="toggleTheme" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,5 +70,9 @@ export default {
 .navbar-logo {
   height: 40px;
   width: auto;
+}
+
+.theme-transition {
+  transition: background-color 0.5s, color 0.5s;
 }
 </style>

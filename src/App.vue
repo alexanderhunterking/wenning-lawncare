@@ -1,5 +1,5 @@
 <template>
-  <div :class="theme">
+  <div :class="theme" class="theme-transition">
     <NavBar :theme="theme" />
     <div class="container mt-5">
       <h1>Welcome to Wenning Lawncare & Landscaping</h1>
@@ -45,10 +45,16 @@ export default {
 body.light-mode {
   background-color: white;
   color: black;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 body.dark-mode {
   background-color: #121212;
   color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.theme-transition {
+  transition: background-color 0.5s, color 0.5s;
 }
 </style>
