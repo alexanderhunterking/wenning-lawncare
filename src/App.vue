@@ -1,6 +1,9 @@
 <template>
   <div :class="theme" class="theme-transition">
-    <NavBar :theme="theme" />
+    <NavBar :theme="theme" @toggle-theme="toggleTheme" />
+    <div class="banner">
+      <img src="./assets/JordanWenning-2930_Original.JPG" alt="Banner" class="banner-image">
+    </div>
     <div class="container mt-5">
       <h1>Welcome to Wenning Lawncare & Landscaping</h1>
       <p>Your trusted partner for all your lawncare and landscaping needs.</p>
@@ -56,5 +59,16 @@ body.dark-mode {
 
 .theme-transition {
   transition: background-color 0.5s, color 0.5s;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  margin-top: -56px; /* Adjust based on the height of the navbar */
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
 }
 </style>

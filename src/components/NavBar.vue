@@ -1,8 +1,8 @@
 <template>
-    <nav :class="['navbar', 'navbar-expand-lg', theme === 'dark-mode' ? 'navbar-dark bg-dark-green' : 'navbar-light bg-light-green', 'theme-transition']">
+    <nav :class="['navbar', 'navbar-expand-lg', theme === 'dark-mode' ? 'navbar-dark' : 'navbar-light', isScrolled ? (theme === 'dark-mode' ? 'bg-dark-green' : 'bg-light-green') : 'bg-transparent', 'theme-transition', 'fixed-top']">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img :src="logoSrc" alt="Wenning Lawncare & Landscaping" class="navbar-logo"></a>
-        <button class="navbar-toggler" type="button" @click="toggleTheme" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -43,7 +43,8 @@ export default {
   data() {
     return {
       darkLogo,
-      lightLogo
+      lightLogo,
+      isScrolled: false
     };
   },
   computed: {
@@ -54,7 +55,16 @@ export default {
   methods: {
     toggleTheme() {
       this.$emit('toggle-theme');
+    },
+    handleScroll() {
+      this.isScrolled = window.scrollY > 50;
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>
@@ -67,6 +77,11 @@ export default {
 .bg-dark-green {
   background-color: #155724;
 }
+
+.bg-transparent {
+  background-color: transparent;
+}
+
 .navbar-logo {
   height: 40px;
   width: auto;
@@ -74,5 +89,12 @@ export default {
 
 .theme-transition {
   transition: background-color 0.5s, color 0.5s;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
 }
 </style>
