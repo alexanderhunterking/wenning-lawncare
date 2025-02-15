@@ -4,21 +4,21 @@
     <div class="banner">
       <img :src="bannerImage" alt="Banner" class="banner-image">
     </div>
-    <div class="container mt-5">
-      <div class="row">
+    <div class="container mt-5 mb-5">
+      <div class="row mb-3">
         <div class="col-12 text-center">
           <h2>About Us</h2>
         </div>
       </div>
       <div class="container about-section">
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-4 order-2 order-md-1 text-center about-text">
+          <div class="col-md-4 order-2 order-md-1 text-center about-text my-3">
             <div :class="['text-box', theme]">
               <p>Jordan Wenning and his company have been offering exceptional service to the Pendleton community since 2017. He started out of his parent's garage with just a push-mower. He has since grown his hobby into a full blown professional operation with top of the line equipment and a dedicated property.</p>
             </div>
           </div>
           <div class="col-md-2 order-3 order-md-2"></div>
-          <div class="col-md-4 text-center order-1 order-md-3">
+          <div class="col-md-4 text-center order-1 order-md-3 my-3">
             <img :src="aboutImage" alt="Jordan Wenning" class="about-image">
           </div>
         </div>
@@ -83,13 +83,15 @@ body.dark-mode {
 
 .banner {
   width: 100%;
-  height: auto;
+  height: 400px; /* Set a fixed height for the banner */
   margin-top: -56px; /* Adjust based on the height of the navbar */
+  overflow: hidden;
 }
 
 .banner-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-section {
@@ -118,14 +120,14 @@ body.dark-mode {
 }
 
 .about-image {
-  width: 100%;
+  width: 70%;
   height: auto;
   border-radius: 50%;
 }
 
 @media (max-width: 768px) {
   .about-image {
-    width: 70%;
+    width: 50%;
   }
 }
 </style>
