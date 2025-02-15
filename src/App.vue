@@ -106,6 +106,7 @@ body.dark-mode {
 .text-box {
   padding: 20px;
   border-radius: 10px;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .text-box.dark-mode {
