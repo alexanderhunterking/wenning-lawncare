@@ -5,8 +5,24 @@
       <img :src="bannerImage" alt="Banner" class="banner-image">
     </div>
     <div class="container mt-5">
-      <h1>Welcome to Wenning Lawncare & Landscaping</h1>
-      <p>Your trusted partner for all your lawncare and landscaping needs.</p>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>About Us</h2>
+        </div>
+      </div>
+      <div class="container about-section">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-4 order-2 order-md-1 text-center about-text">
+            <div class="text-box">
+              <p>Jordan Wenning and his company have been offering exceptional service to the Pendleton community since 2017. He started out of his parent's garage with just a push-mower. He has since grown his hobby into a full blown professional operation with top of the line equipment and a dedicated property.</p>
+            </div>
+          </div>
+          <div class="col-md-2 order-3 order-md-2"></div>
+          <div class="col-md-4 text-center order-1 order-md-3">
+            <img :src="aboutImage" alt="Jordan Wenning" class="about-image">
+          </div>
+        </div>
+      </div>
     </div>
     <Footer @toggle-theme="toggleTheme" :theme="theme" />
   </div>
@@ -16,6 +32,7 @@
 import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
 import bannerImage from './assets/JordanWenning-2930_Original.JPG'
+import aboutImage from './assets/JordanWenning-2753_Original.JPG'
 
 export default {
   name: 'App',
@@ -26,7 +43,8 @@ export default {
   data() {
     return {
       theme: 'dark-mode',
-      bannerImage
+      bannerImage,
+      aboutImage
     }
   },
   methods: {
@@ -72,5 +90,34 @@ body.dark-mode {
 .banner-image {
   width: 100%;
   height: auto;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+}
+
+.about-text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.text-box {
+  background-color: #2c2c2c; /* Slightly lighter gray than the background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .about-image {
+    width: 70%;
+  }
 }
 </style>
