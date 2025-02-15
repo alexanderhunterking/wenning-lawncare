@@ -2,7 +2,7 @@
   <div :class="theme" class="theme-transition">
     <NavBar :theme="theme" @toggle-theme="toggleTheme" />
     <div class="banner">
-      <img src="./assets/JordanWenning-2930_Original.JPG" alt="Banner" class="banner-image">
+      <img :src="bannerImage" alt="Banner" class="banner-image">
     </div>
     <div class="container mt-5">
       <h1>Welcome to Wenning Lawncare & Landscaping</h1>
@@ -15,6 +15,7 @@
 <script>
 import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
+import bannerImage from './assets/JordanWenning-2930_Original.JPG'
 
 export default {
   name: 'App',
@@ -24,7 +25,8 @@ export default {
   },
   data() {
     return {
-      theme: 'dark-mode'
+      theme: 'dark-mode',
+      bannerImage
     }
   },
   methods: {
