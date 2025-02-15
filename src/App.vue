@@ -13,7 +13,7 @@
       <div class="container about-section">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-4 order-2 order-md-1 text-center about-text">
-            <div class="text-box">
+            <div :class="['text-box', theme]">
               <p>Jordan Wenning and his company have been offering exceptional service to the Pendleton community since 2017. He started out of his parent's garage with just a push-mower. He has since grown his hobby into a full blown professional operation with top of the line equipment and a dedicated property.</p>
             </div>
           </div>
@@ -104,9 +104,16 @@ body.dark-mode {
 }
 
 .text-box {
-  background-color: #2c2c2c; /* Slightly lighter gray than the background */
   padding: 20px;
   border-radius: 10px;
+}
+
+.text-box.dark-mode {
+  background-color: #2c2c2c; /* Slightly lighter gray than the background */
+}
+
+.text-box.light-mode {
+  background-color: #f0f0f0; /* Very light grey */
 }
 
 .about-image {
