@@ -5,26 +5,27 @@
       <img :src="bannerImage" alt="Banner" class="banner-image">
     </div>
     <div class="container mt-5 mb-5">
-      <div class="row mb-3">
-        <div class="col-12 text-center">
-          <h2>About Us</h2>
-        </div>
-      </div>
-      <div class="container about-section">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-4 order-2 order-md-1 text-center about-text my-3">
-            <div :class="['text-box', theme]">
-              <p>Jordan Wenning and his company have been offering exceptional service to the Pendleton community since 2017. He started out of his parent's garage with just a push-mower. He has since grown his hobby into a full blown professional operation with top of the line equipment and a dedicated property.</p>
-            </div>
-          </div>
-          <div class="col-md-2 order-3 order-md-2"></div>
-          <div class="col-md-4 text-center order-1 order-md-3 my-3">
-            <img :src="aboutImage" alt="Jordan Wenning" class="about-image">
-          </div>
-        </div>
-      </div>
+      <!-- about section -->
+  <div class="row mb-3">
+    <section class="py-5">
+	    <div class="container about-section">
+		      <div class="row align-items-center gx-4">
+			<div class="col-md-5">
+				<div class="ms-md-2 ms-lg-5"><img class="img-fluid rounded-3" :src="aboutImage"></div>
+			</div>
+			<div class="col-md-6 offset-md-1" :class="[theme]">
+				<div class="ms-md-2 ms-lg-5">
+					<h2 class="display-5 fw-bold">About Us</h2>
+					<p class="lead">We have been offering exceptional service to the Pendleton community since 2017. Jordan Wenning started out of his parent's garage with just a push-mower. He has since grown his hobby into a full blown professional operation with top of the line equipment and a dedicated property.</p>
+					<p class="lead mb-0">It doesn't matter if you just need weekly mowing, or you want to completely transform your property, we can gaurantee top notch quality. Get a quote for your project today!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
     </div>
-    <Footer @toggle-theme="toggleTheme" :theme="theme" />
+    </div>
+    <Footer @toggle-theme="toggleTheme" :theme="theme"/>
   </div>
 </template>
 
