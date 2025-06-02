@@ -8,12 +8,12 @@
       <!-- about section -->
   <div class="row mb-3">
     <section class="py-5">
-	    <div class="container about-section">
+	    <div class="container about-section" id="about-section" :class="[theme]">
 		      <div class="row align-items-center gx-4">
 			<div class="col-md-5">
-				<div class="ms-md-2 ms-lg-5"><img class="img-fluid rounded-3" :src="aboutImage"></div>
+				<div class="ms-md-2 ms-lg-5"><img class="img-fluid rounded-3 " :src="aboutImage"></div>
 			</div>
-			<div class="col-md-6 offset-md-1" :class="[theme]">
+			<div class="col-md-6 offset-md-1">
 				<div class="ms-md-2 ms-lg-5">
 					<h2 class="display-5 fw-bold">About Us</h2>
 					<p class="lead">We have been offering exceptional service to the Pendleton community since 2017. Jordan Wenning started out of his parent's garage with just a push-mower. He has since grown his hobby into a full blown professional operation with top of the line equipment and a dedicated property.</p>
@@ -23,6 +23,9 @@
 		</div>
 	</div>
 </section>
+    </div>
+    <div class="row mb-3">
+      
     </div>
     </div>
     <Footer @toggle-theme="toggleTheme" :theme="theme"/>
@@ -73,7 +76,7 @@ body.light-mode {
 }
 
 body.dark-mode {
-  background-color: #121212;
+  background-color: #1c1c1e;
   color: white;
   transition: background-color 0.5s, color 0.5s;
 }
@@ -128,7 +131,7 @@ body.dark-mode {
 
 @media (max-width: 768px) {
   .about-image {
-    width: 50%;
+    width: 73%;
   }
 }
 </style>
