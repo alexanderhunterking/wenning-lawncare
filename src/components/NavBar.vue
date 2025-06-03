@@ -14,7 +14,7 @@
               <a class="nav-link" href="#about-section">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Reviews</a>
+              <a class="nav-link" href="#reviews-section">Reviews</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Services</a>
