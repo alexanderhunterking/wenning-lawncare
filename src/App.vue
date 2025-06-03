@@ -11,7 +11,7 @@
           <div class="container about-section" id="about-section" :class="[theme]">
             <div class="row align-items-center gx-4">
               <div class="col-md-5">
-                <div class="ms-md-2 ms-lg-5">
+                <div class="ms-md-2 ms-lg-5 mb-4 mt-4">
                   <img class="img-fluid rounded-3" :src="aboutImage">
                 </div>
               </div>
@@ -47,13 +47,13 @@
                       <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"></path>
                     </svg>
                   </div>
-                  <p class="lead">We've used Jordan & his team to maintain our lawn for the past year & we just finished our first landscaping design project with him. Our project started with a detailed consultation to discuss the scope of work & design inspiration. From there, Jordan gave us a timeline/pricing estimates & we got scheduled. Communication was excellent throughout the process & the whole team was punctual & polite! We had a fairly large project so it was impressive that the team got it done in just 2 days. I'm an interior designer so I'm a very picky person yet Jordan brought our vision to life with no issues. Absolutely thrilled with our "new yard"!</p>
+                  <p class="lead">We've used Jordan & his team to maintain our lawn for the past year. Our project started with a detailed consultation to discuss the scope of work & design inspiration. From there, Jordan gave us a timeline/pricing estimates & we got scheduled. Communication was excellent throughout the process & the whole team was punctual & polite! We had a fairly large project so it was impressive that the team got it done in just 2 days. Absolutely thrilled with our "new yard"!</p>
                   <div class="text-end pt-2">
                     <h5 class="fw-bold">Victoria Spell</h5>
                   </div>
                 </div>
               </div>
-              <div class="d-flex align-items-start">
+              <div class="d-flex align-items-start mb-4">
                 <img alt="" class="img-fluid rounded-circle me-3 review-image" height="96" src="https://freefrontend.dev/assets/square-small.png" width="96">
                 <div :class="[theme === 'dark-mode' ? 'bg-dark' : 'bg-light']" class="p-3 p-md-4">
                   <div class="text-primary mb-1">
@@ -64,6 +64,20 @@
                   <p class="lead">Jordan and his team transformed our daughter’s home in only 2 days. They were great to work with, punctual and created a wonderful landscape. The work they did transformed the curb appeal of the house.</p>
                   <div class="text-end pt-2">
                     <h5 class="fw-bold">Lisa Sloan</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-4">
+                <img alt="" class="img-fluid rounded-circle me-3 review-image" height="96" src="https://freefrontend.dev/assets/square-small.png" width="96">
+                <div :class="[theme === 'dark-mode' ? 'bg-dark' : 'bg-light']" class="p-3 p-md-4">
+                  <div class="text-primary mb-1">
+                    <svg class="bi bi-quote" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"></path>
+                    </svg>
+                  </div>
+                  <p class="lead">My lawnmower broke and needed grass cut asap and he was there quickly. He did beautiful work in a very good time plus my lawn had amazing stripes. Very reasonable priced and amazing work. Would definitely recommend.</p>
+                  <div class="text-end pt-2">
+                    <h5 class="fw-bold">Jeff Jarvis</h5>
                   </div>
                 </div>
               </div>
