@@ -86,6 +86,76 @@
         </div>
       </section>
     </div>
+    <!-- services section -->
+     <div class="row mb-3">
+      <section class="py-5">
+	<div class="container">
+		<div class="row justify-content-center text-center mb-3 mb-md-5">
+			<div class="col-lg-8 col-xxl-7">
+				<h2 class="display-5 fw-bold mb-3">Our Services</h2>
+				<p class="lead">We specialize in professional lawncare and landscaping services that enhance the beauty and functionality of your outdoor spaces. From spring planting to winter snow removal, we provide tailored solutions for every season!</p>
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+	</div>
+</section>
+     </div>
     <Footer @toggle-theme="toggleTheme" :theme="theme"/>
   </div>
 </template>
