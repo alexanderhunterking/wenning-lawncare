@@ -207,21 +207,22 @@
 					<p class="lead">Reach out to us! It doesn't matter whether you just want some fresh mulch, mowing, or a complete landscaping overhaul, </p>
 					<p class="lead">Phone: (765) 571-9457</p>
           <p class="lead">Email: wenninglandscape@gmail.com</p>
-          <form>
+          <form action="https://api.staticforms.xyz/submit" method="POST">
+            <input type="hidden" name="apiKey" value="sf_immabdm5e9dkge8dl0dl4dnj">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="mb-3">
-									<input class="form-control bg-light" placeholder="Your name" type="text">
+								<div class="mb-3 form-group">
+									<input class="form-control bg-light" placeholder="Your name" type="text" id="name" name="name" required>
 								</div>
 							</div>
 							<div class="col-md-12">
-								<div class="mb-3">
-									<input class="form-control bg-light" placeholder="Your email" type="text">
+								<div class="mb-3 form-group">
+									<input class="form-control bg-light" placeholder="Your email" type="email" id="email" name="email" required>
 								</div>
 							</div>
 							<div class="col-md-12">
-								<div class="mb-3">
-									<textarea class="form-control bg-light" placeholder="Your message" rows="4"></textarea>
+								<div class="mb-3 form-group">
+									<textarea class="form-control bg-light" placeholder="Your message" id="message" name="message" required rows="4"></textarea>
 								</div>
 							</div>
 							<div class="col-md-5">
