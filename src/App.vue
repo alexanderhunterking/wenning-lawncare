@@ -87,7 +87,7 @@
       </section>
     </div>
     <!-- services section -->
-     <div class="row mb-3">
+     <!-- <div class="row mb-3">
       <section class="py-5" id="services-section">
 	<div class="container">
 		<div class="row justify-content-center text-center mb-3 mb-md-5">
@@ -99,7 +99,7 @@
 		<div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="path/to/your/image1.jpg" class="card-img-top" alt="Service 1">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -108,7 +108,7 @@
   </div>
   <div class="col">
     <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="path/to/your/image2.jpg" class="card-img-top" alt="Service 2">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a short card.</p>
@@ -117,7 +117,7 @@
   </div>
   <div class="col">
     <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="path/to/your/image3.jpg" class="card-img-top" alt="Service 3">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -126,7 +126,7 @@
   </div>
   <div class="col">
     <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="path/to/your/image4.jpg" class="card-img-top" alt="Service 4">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -135,7 +135,7 @@
   </div>
   <div class="col">
     <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="path/to/your/image5.jpg" class="card-img-top" alt="Service 5">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -144,7 +144,7 @@
   </div>
   <div class="col">
     <div :class="[theme === 'dark-mode' ? 'bg-dark text-light' : 'bg-light text-dark']" class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="path/to/your/image6.jpg" class="card-img-top" alt="Service 6">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -155,7 +155,7 @@
 </div>
 	</div>
 </section>
-     </div>
+     </div> -->
      <!-- gallery section -->
       <div class="row mb-3">
         <section class="py-5" id="gallery-section">
@@ -163,7 +163,7 @@
 		<div class="row justify-content-center text-center mb-2 mb-lg-4">
 			<div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
 				<h2 class="display-5 fw-bold">Our Gallery</h2>
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta harum ipsum venenatis metus sem veniam eveniet aperiam suscipit.</p>
+				<!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta harum ipsum venenatis metus sem veniam eveniet aperiam suscipit.</p> -->
 			</div>
 		</div>
 		<div class="row py-3 align-items-center">
@@ -172,9 +172,9 @@
 			</div>
 			<div class="col-md-6 ps-md-5">
 				<div class="mb-5 mb-lg-3">
-					<h4>A Catchy Title</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusantium nulla, sequi cupiditate exercitationem sit incidunt rerum explicabo. Soluta beatae esse praesentium exercitationem vero harum pariatur adipisci qui veritatis est!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta harum ipsum venenatis metus sem veniam eveniet aperiam suscipit.</p><a class="btn btn-lg btn-primary" href="">View Gallery</a>
+					<h4>Take a look</h4>
+					<p>Here are some of our projects! We take pride in making your property the best in the neighborhood.</p>
+					<p></p><a class="btn btn-lg btn-success" href="">Get a Quote!</a>
 				</div>
 			</div>
 		</div>
